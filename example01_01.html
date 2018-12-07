@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- example01_01.html -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>여기는 제목입니다.</title>
+<style>
+	span { font-size: 30pt;   }
+	.redtext   { color : #f00;   }
+	.italictext { font-style: italic;   }
+</style>
+<script src="main.js"></script>
+<script>
+    abc();
+</script>
+<!--<script src="jquery-3.3.1.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+<script>
+$(document).ready(function(){
+    $("span").addClass("redtext");  
+    var len=$("span").length;
+});    
+</script>
+</head>
+<body>
+<span> simple </span>
+<script>
+	$("span").addClass("italictext");
+</script>
+</body>
+</html>
